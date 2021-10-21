@@ -1,0 +1,32 @@
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+#marker-frame {
+    display: flex;
+}
+
+#lat-lng{
+    padding-left: 200px;
+    width: 500px;
+    white-space: pre-wrap;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+}

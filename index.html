@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <input id="hide-markers" type="button" value="Hide Markers" />
+      <input id="show-markers" type="button" value="Show Markers" />
+      <input id="delete-markers" type="button" value="Delete Markers" />
+    </div>
+    <div id="map"></div>
+    <div id="marker-frame">
+      <div id="lat-lng"></div>
+      <div id="add-marker-menu">
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="info">Info (link):</label><br>
+            <input type="text" id="info" name="info">
+          </form>
+          <button id="add-marker-btn">Add a marker</button>
+      </div>
+    </div>
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe6Y9vz60ew3T3-yOS7U7ejGnF_b2nuoc&callback=initMap"
+    ></script>
+  </body>
+</html>
